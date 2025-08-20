@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctyrhiw8b1tps"]
+
+[ext_resource type="PackedScene" uid="uid://tp0vjy41dy2j" path="res://Scenes/player.tscn" id="1_eigwd"]
+[ext_resource type="PackedScene" uid="uid://bmrcw1j6e0jrb" path="res://Scenes/Managers/game_manager.tscn" id="1_h3k2q"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GameManager" parent="." instance=ExtResource("1_h3k2q")]
+
+[node name="Player" parent="." instance=ExtResource("1_eigwd")]
+position = Vector2(215, 212)
+
+[node name="Player2" parent="." instance=ExtResource("1_eigwd")]
+position = Vector2(417, 211)
+player_id = "2"
